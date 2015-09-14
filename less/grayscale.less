@@ -6,7 +6,7 @@ body {
     height: 100%;
     font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: white;
-    background-color: black;
+    background-color: #FF6262;
 }
 
 html {
@@ -59,7 +59,7 @@ a {
     border-bottom: 1px solid fade(white, 30%);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: black;
+    background-color: white;
     .navbar-brand {
         font-weight: 700;
         &:focus {
@@ -85,7 +85,7 @@ a {
                 -moz-transition: background .3s ease-in-out;
                 transition: background .3s ease-in-out;
                 &:hover {
-                    color: fade(white, 80%);
+                    color: #FF5050;
                     outline: none;
                     background-color: transparent;
                 }
@@ -100,7 +100,7 @@ a {
                 a {
                     background-color: fade(white, 30%);
                     &:hover {
-                        color: white;
+                        color: black;
                     }
                 }
             }
@@ -116,8 +116,12 @@ a {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         &.top-nav-collapse {
             padding: 0;
-            background: black;
+            color: black;
+            background: white;
             border-bottom: 1px solid fade(white, 30%);
+            a {
+                color: black;
+            }
         }
     }
 }
@@ -138,11 +142,8 @@ a {
     .intro-body {
         display: table-cell;
         vertical-align: middle;
-        .brand-heading {
-            font-size: 40px;
-        }
         .intro-text {
-            font-size: 18px;
+            font-size: 30px;
             font-family: 'Sue Ellen Francisco', cursive;
         }
     }
@@ -150,11 +151,9 @@ a {
         height: 100%;
         padding: 0;
         .intro-body {
-            .brand-heading {
-                font-size: 100px;
-            }
             .intro-text {
-                font-size: 26px;
+                font-size: 50px;
+                font-family: 'Sue Ellen Francisco', cursive;
             }
         }
     }
