@@ -131,6 +131,7 @@ a:focus {
   color: white;
   background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
   background-color: black;
+  border-style: solid;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -150,7 +151,7 @@ a:focus {
     padding: 0;
   }
   .intro .intro-body .intro-text {
-    font-size: 50px;
+    font-size: 75px;
     font-family: 'Sue Ellen Francisco', cursive;
   }
 }
