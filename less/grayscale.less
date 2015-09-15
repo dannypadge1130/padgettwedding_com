@@ -125,11 +125,13 @@ a {
             border-bottom: 1px solid fade(white, 30%);
             a {
                 color: black;
+                text-shadow: 0px 0 black, 0 0px black, 0px 0 black, 0 0px black;
             }
         }
 
         a {
             color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         }
     }
 }
@@ -143,7 +145,6 @@ a {
     color: white;
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: black;
-    border-style: solid;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -154,6 +155,7 @@ a {
         .intro-text {
             font-size: 30px;
             font-family: 'Sue Ellen Francisco', cursive;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         }
     }
     @media(min-width:768px) {
@@ -163,6 +165,14 @@ a {
             .intro-text {
                 font-size: 75px;
                 font-family: 'Sue Ellen Francisco', cursive;
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
+        }
+    }
+    @media(max-width:768px) {
+        .intro-body {
+            .intro-text {
+                margin-top: 50%;
             }
         }
     }

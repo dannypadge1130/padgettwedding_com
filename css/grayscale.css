@@ -117,9 +117,11 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse a {
     color: black;
+    text-shadow: 0px 0 black, 0 0px black, 0px 0 black, 0 0px black;
   }
   .navbar-custom a {
     color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 }
 .intro {
@@ -131,7 +133,6 @@ a:focus {
   color: white;
   background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
   background-color: black;
-  border-style: solid;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -144,6 +145,7 @@ a:focus {
 .intro .intro-body .intro-text {
   font-size: 30px;
   font-family: 'Sue Ellen Francisco', cursive;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 @media (min-width: 768px) {
   .intro {
@@ -153,6 +155,12 @@ a:focus {
   .intro .intro-body .intro-text {
     font-size: 75px;
     font-family: 'Sue Ellen Francisco', cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+}
+@media (max-width: 768px) {
+  .intro .intro-body .intro-text {
+    margin-top: 50%;
   }
 }
 .btn-circle {
