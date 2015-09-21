@@ -5,6 +5,12 @@ body {
   color: white;
   background-color: #ff5050;
 }
+.content-section.flip {
+  background-color: #2c3e50;
+}
+.row {
+  margin-right: 0px;
+}
 html {
   width: 100%;
   height: 100%;
@@ -128,7 +134,6 @@ a:focus {
   display: table;
   width: 100%;
   height: auto;
-  padding: 100px 0;
   text-align: center;
   color: white;
   background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
@@ -226,35 +231,7 @@ a:focus {
   }
 }
 .content-section {
-  padding-top: 100px;
-}
-.download-section {
-  width: 100%;
-  padding: 50px 0;
-  color: white;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-#map {
-  width: 100%;
-  height: 200px;
-  margin-top: 100px;
-}
-@media (min-width: 767px) {
-  .content-section {
-    padding-top: 250px;
-  }
-  .download-section {
-    padding: 100px 0;
-  }
-  #map {
-    height: 400px;
-    margin-top: 250px;
-  }
+  padding-top: 50px;
 }
 .btn {
   text-transform: uppercase;
@@ -319,4 +296,117 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+#countdown h2 {
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 100px;
+}
+@media (max-width: 400px) {
+  #countdown h2 {
+    font-size: 60px;
+  }
+}
+#ceremony iframe {
+  width: 70%;
+  height: 70%;
+}
+.timer_box {
+  margin: 35px 24px;
+  display: inline-block;
+  padding: 20px 12px 0px 12px;
+  text-align: center;
+  width: 130px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.6);
+}
+.timer_box h1 {
+  font-size: 48px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
+.timer_box p {
+  margin-top: 0px;
+}
+@media only screen and (max-width: 520px) {
+  .timer_box {
+    margin: 0 12px 12px 0;
+  }
+  .tp-bullets {
+    display: none;
+  }
+  #header .container {
+    padding: 20px 0px 20px 0;
+  }
+  #header-button {
+    display: none;
+  }
+  #appendedInputButtons {
+    border-radius: 20px;
+    margin-bottom: 25px;
+  }
+  #slider {
+    display: none;
+  }
+  .btn-subscribe {
+    border-radius: 20px;
+  }
+  #contact-informations {
+    margin-top: 24px;
+  }
+  body {
+    background-color: #2c3e50;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .timer_box {
+    width: 100px;
+    padding: 16px 0 0 0;
+    margin: 35px 12px;
+  }
+  #layer {
+    display: none;
+  }
+  .timer_box h1 {
+    font-size: 28px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 768px) {
+  #map {
+    width: 750px;
+    height: 300px;
+    border: 5px solid #2c3e50;
+  }
+}
+#wedding_location .row {
+  margin-bottom: 10px;
+}
+#wedding_location .row .left {
+  text-align: left;
+}
+#wedding_location .row .left h4 {
+  margin: 0px;
+}
+#wedding_location .row .left a {
+  cursor: pointer;
+}
+.colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+.form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
 }
