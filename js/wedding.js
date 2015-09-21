@@ -30,10 +30,57 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 function initMap() {
-  // Create a map object and specify the DOM element for display.
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 40.5515, lng: -74.2050},
-    scrollwheel: false,
-    zoom: 15
-  });
+    // Create a map object and specify the DOM element for display.
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 40.5646056, lng: -74.1468185},
+        scrollwheel: false,
+        zoom: 12
+    });
+
+    var wedding = new google.maps.Marker({
+        position: {lat: 40.5515, lng: -74.2050},
+        map: map,
+        title: "Wedding"
+    });
+
+    var weddingContent = '<div style="color:black;"><p>Grand Oaks Country Club<br>'+
+                        '200 Huguenot Avenue<br>'+
+                        'Staten Island<br>'+
+                        'NY 10312<br></div>';
+
+    var weddingInfoWindow = new google.maps.InfoWindow({
+        content: weddingContent
+    });
+
+    wedding.addListener('click', function() {
+        weddingInfoWindow.open(map, wedding);
+    });
+
+    var hotel = new google.maps.Marker({
+        position: {lat: 40.586489, lng: -74.190545},
+        map: map,
+        title: "Holiday Inn"
+    });
+
+    var hotelContent = '<div style="color:black;"><p>Holiday Inn<br>'+
+                        '290 Wild Avenue<br>'+
+                        'Staten Island<br>'+
+                        'NY 10314</p></div>';
+
+    var hotelInfoWindow = new google.maps.InfoWindow({
+        content: hotelContent
+    });
+
+    hotel.addListener('click', function() {
+        hotelInfoWindow.open(map, hotel);
+    });
+
+    var markers = [wedding, hotel];
+    var bounds = new google.maps.LatLngBounds();
+    
+    for(index in markers) {
+        bounds.extend(markers[index].position);
+    }
+
+    map.fitBounds(bounds);
 }
