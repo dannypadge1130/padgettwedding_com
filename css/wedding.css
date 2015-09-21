@@ -375,10 +375,12 @@ body {
     font-size: 36px;
   }
 }
-#map {
-  width: 750px;
-  height: 300px;
-  border: 5px solid #2c3e50;
+@media (min-width: 768px) {
+  #map {
+    width: 750px;
+    height: 300px;
+    border: 5px solid #2c3e50;
+  }
 }
 #wedding_location .row {
   margin-bottom: 10px;
