@@ -378,6 +378,19 @@ body {
 #map {
   width: 750px;
   height: 300px;
+  border: 5px solid #2c3e50;
+}
+#wedding_location .row {
+  margin-bottom: 10px;
+}
+#wedding_location .row .left {
+  text-align: left;
+}
+#wedding_location .row .left h4 {
+  margin: 0px;
+}
+#wedding_location .row .left a {
+  cursor: pointer;
 }
 .colorgraph {
   height: 5px;
