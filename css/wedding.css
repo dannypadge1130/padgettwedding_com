@@ -410,3 +410,7 @@ body {
   height: auto;
   padding: 10px;
 }
+.form-control ::selection {
+  color: red;
+  background: yellow;
+}
