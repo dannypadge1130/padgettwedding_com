@@ -410,7 +410,11 @@ body {
   height: auto;
   padding: 10px;
 }
-.form-control ::selection {
-  color: red;
-  background: yellow;
+::-moz-selection {
+  background-color: #ccc;
+  color: #fff;
+}
+::selection {
+  background-color: #ccc;
+  color: #fff;
 }
