@@ -440,10 +440,14 @@ body {
     font-size: 16px;
     height: auto;
     padding: 10px;
+}
 
-    ::selection {
-        color: red;
-        background: yellow;
-    }
+::-moz-selection {
+    background-color: #ccc;
+    color: #fff;        
+}
 
+::selection {
+    background-color: #ccc;
+    color: #fff;
 }
