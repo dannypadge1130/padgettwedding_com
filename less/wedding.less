@@ -109,7 +109,7 @@ a {
             &.active {
                 outline: none;
                 a {
-                    background-color: fade(white, 30%);
+                    background-color: transparent;
                     &:hover {
                         color: black;
                     }
@@ -382,6 +382,7 @@ body {
     .btn-subscribe{border-radius: 20px;}
     #contact-informations{margin-top: 24px;}
 }
+
 @media only screen and (max-width: 740px) {
     .timer_box{
         width: 100px;
@@ -434,19 +435,16 @@ body {
   background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
 }
 
-.form-control {
-    position: relative;
-    font-size: 16px;
-    height: auto;
-    padding: 10px;
-}
+.wedding_registry {
+    img {
 
-::-moz-selection {
-    background-color: #ccc;
-    color: #fff;        
-}
+        width: 500px;
+        height: 350px;
+        padding-bottom: 20px;
 
-::selection {
-    background-color: #ccc;
-    color: #fff;
+        @media only screen and (max-width: 520px) {
+            width: 200px;
+            height: 150px;
+        }
+    }
 }
