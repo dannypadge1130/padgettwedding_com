@@ -398,14 +398,6 @@ body {
     h1{ font-size: 36px;}
 }
 
-@media(min-width:768px) {
-    #map {
-        width: 750px;
-        height: 300px;
-        border: 5px solid #2c3e50;
-    }
-}
-
 #wedding_location {
     .row {
         margin-bottom: 10px;
@@ -421,6 +413,21 @@ body {
             a {
                 cursor:pointer
             }
+        }
+
+        .right {
+            text-align: right;
+        }
+    }
+}
+
+@media(min-width:768px) {
+    #wedding_location {     
+        #map {
+            width: 100%;
+            height: 300px;
+            border: 5px solid #2c3e50;
+            margin: 0 auto 0 auto;
         }
     }
 }
