@@ -135,7 +135,7 @@ a:focus {
   height: auto;
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url("http://s3.amazonaws.com/padgettwedding/intro-bg.jpg") no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
