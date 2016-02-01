@@ -34,6 +34,24 @@ h6 {
   font-weight: 700;
   letter-spacing: 1px;
 }
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+  background: #fff2a8;
+  /* WebKit/Blink Browsers */
+}
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection,
+h4::-moz-selection,
+h5::-moz-selection,
+h6::-moz-selection {
+  background: #fff2a8;
+  /* Gecko Browsers */
+}
 p {
   margin: 0 0 25px;
   font-size: 18px;
@@ -47,6 +65,22 @@ p {
     line-height: 1.6;
   }
 }
+p::selection {
+  background: #fff2a8;
+  /* WebKit/Blink Browsers */
+}
+p::-moz-selection {
+  background: #fff2a8;
+  /* Gecko Browsers */
+}
+b::selection {
+  background: #fff2a8;
+  /* WebKit/Blink Browsers */
+}
+b::-moz-selection {
+  background: #fff2a8;
+  /* Gecko Browsers */
+}
 a {
   color: #42dca3;
   -webkit-transition: all 0.2s ease-in-out;
@@ -57,6 +91,14 @@ a:hover,
 a:focus {
   text-decoration: none;
   color: #1d9b6c;
+}
+a::selection {
+  background: #fff2a8;
+  /* WebKit/Blink Browsers */
+}
+a::-moz-selection {
+  background: #fff2a8;
+  /* Gecko Browsers */
 }
 .light {
   font-weight: 400;
